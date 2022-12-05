@@ -32,11 +32,6 @@
          let SantizeName =  encodeHTML(sortedInput[i].Identification)
          
          let SantizeResponses =  encodeHTML(sortedInput[i].Operation)
-         
-             // Dis-allow unicode comments for spam 
-          SantizeName = SantizeName.replace(/[^\x00-\x7F]/g, "")
- 
-         SantizeResponses = SantizeResponses.replace(/[^\x00-\x7F]/g, "")
                    
          // Add Entries To Main Section
          document.getElementById("json").innerHTML += `
@@ -57,14 +52,9 @@
          data.forEach((row) => {
          
          // Sanitize Data
-         let SantizeResponses =  encodeHTML(row.Guestbook_Entry)
+         let SantizeResponses =  encodeHTML(row.Operation)
          
-         let SantizeName =  encodeHTML(row.Name)
-         
-         // Dis-allow unicode comments for spam 
-          SantizeName = SantizeName.replace(/[^\x00-\x7F]/g, "")
- 
-         SantizeResponses = SantizeResponses.replace(/[^\x00-\x7F]/g, "")
+         let SantizeName =  encodeHTML(row.Identification)
          
          // Split timestamp data
                      var splitTime =  row.Timestamp.split(' ')[0];
@@ -91,27 +81,6 @@
      
  }
  
- 
- // On Submit - Validating Text Before Sending For Profanities
- var Gform = document.getElementById("gform")
- Gform.addEventListener('submit', (e) => {
-   validateRecaptcha();
-     
-   
- })
- 
- // Validate Recaptcha
- function validateRecaptcha() {
-     var response = grecaptcha.getResponse();
-     if (response.length === 0) {
-          // if Captcha not passed - do no nothing. 
-         return true;
-     } else {
-         // if Captcha Passed - Validate Text For Swearing Etc. 
-         validate_text();
-         return true;
-     }
- }
  
  function tConvert (time) {
    
@@ -174,17 +143,7 @@
   else  // if no profanities found - check if Captcha is complete
   {
       
-     
-      
-        var response = grecaptcha.getResponse();
-     if (response.length === 0) { // if Captcha is not complete
-         // do nothing
-    
-     } else { // add values to guestbook
-     
        document.gform.submit();
-     
-     }
  
       
         // Timeout is needed for form to properly submit with animation
@@ -236,19 +195,13 @@
 
  <input class="form-element" type="text" name="GOOGLE_ENTRY_ID_Email" id="GOOGLE_ENTRY_ID_Email" placeholder="Inn" style="background: #c9c9c9;">
 
-<label for="GOOGLE_ENTRY_ID_TextArea"  class="max-length">Guestbook Entry</label>
-
-  <label for="g-recaptcha"  class="aterisk_after">Captcha</label>      
-<div class="g-recaptcha"
-data-sitekey="GOOGLE_Captcha_Key"></div>
-
  <input class="form-button" type="submit" value="Submit">
  <input class="form-button" type="reset" value="Reset Form">
 
 </form>
  </div>
 </div>
-</div>      
+</div>    
           
  `   
    

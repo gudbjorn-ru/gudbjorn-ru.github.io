@@ -54,7 +54,7 @@ body {
 	 transition: background 0.25s ease;
 }
  .entry:nth-child(even) {
-	 background: #c0c0c0;
+	 background: #636363;
 }
  .entry-info {
 	 font-style: italic;
@@ -144,7 +144,6 @@ body {
 	 padding: 0.5em;
 	 border: none;
 	 resize: none;
-	 background: #d3d3d3;
 	 color: #000;
 }
  .form-element::placeholder {
@@ -248,7 +247,8 @@ body {
 	 font-size: 30px;
 	 font-weight: bold;
 	 text-decoration: none;
-	 color: #333;
+	 color: black;
+	 background: #3a3a3a;
 }
  .sign-guest-book-popup .close:hover {
 	 color: white;

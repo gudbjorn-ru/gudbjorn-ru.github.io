@@ -1,15 +1,14 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">	
   
-  <title>Serverless Guest Book | Built by github.com/MarketingPipeline</title>
+  <title> Hermun - Skráningarsíða</title>
 <link href="https://fonts.googleapis.com/css?family=Muli|Ovo" rel="stylesheet">
 <link rel="stylesheet" href="assets/style.css">
-	
-<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
 </head>
 <body>
 <div id="GuestBook">
-	<h1 class="main-header"> Litla síðan mín</h1>
+	<h1 class="main-header"> Hermun - Skráningarsíða</h1>
 	<h3 id="t">Nýlegar skráningar</h3>
 <!-- Homepage -->
 <div class="container">
@@ -25,7 +24,7 @@
         <h1>Veljið úr listanum að neðan</h1>
         <div class="links">
            <a href="#AllEntries">Sjá gögn</a>
-            <a href="#SignGuestBook">Skrá nýja komu</a>
+            <a href="#SignGuestBook">Skrá nýjan atburð</a>
 	    <a onClick="window.location.reload();">Uppfæra lista</a>	
            
         </div>
@@ -34,25 +33,21 @@
 	
 <div id="SignGuestBook" class="overlay">
 	<div id="SendForm" class="sign-guest-book-popup">
-		<h1>Sign The Guestbook</h1>
+		<h1>Skrá nýjan atburð</h1>
 		<a class="close" href="#">&times;</a>
 		<div class="content">
       <br>
 		
     <form name="gform" id="gform" enctype="text/plain" action="GOOGLE_FORM_URL" target="hidden_iframe" onsubmit="submitted=true;">
       
-       <label for="GOOGLE_ENTRY_ID_Name"  class="aterisk_after">Name </label>
+       <label for="GOOGLE_ENTRY_ID_Name"  class="aterisk_after">Einkenni </label>
       
-        <input class="form-element" type="text" name="GOOGLE_ENTRY_ID_Name" id="GOOGLE_ENTRY_ID_Name" placeholder="Gul peysa." style="background: #c9c9c9;" required>
+        <input class="form-element" type="text" name="GOOGLE_ENTRY_ID_Name" id="GOOGLE_ENTRY_ID_Name" placeholder="Gul peysa" required>
       
         <label for="GOOGLE_ENTRY_ID_Email">Inn / Kassi / Út</label>
       
    
-        <input class="form-element" type="text" name="GOOGLE_ENTRY_ID_Email" id="GOOGLE_ENTRY_ID_Email" placeholder="Inn" style="background: #c9c9c9;">
-
-         <label for="g-recaptcha"  class="aterisk_after">Captcha</label>      
-	 <div class="g-recaptcha"
-       data-sitekey="GOOGLE_Captcha_Key"></div>
+        <input class="form-element" type="text" name="GOOGLE_ENTRY_ID_Email" id="GOOGLE_ENTRY_ID_Email" placeholder="Inn">
       
         <input class="form-button" type="submit" value="Submit">
         <input class="form-button" type="reset" value="Reset Form">
@@ -85,8 +80,6 @@
   var GOOGLE_ENTRY_ID_Email="entry.1292255945";	// Operation Entry ID
     
   // Put your Google Form Link Here  (Make sure to use correct link as documented)
-		
-		
 
   var Google_Form_Link="https://docs.google.com/forms/d/e/1FAIpQLScZyjqEu0Y4TdlB9cscgYfXry3U6gFRwV_xvaWILrwjQSQ5QA/formResponse?"  
 	  
@@ -94,15 +87,9 @@
 	 
 	var Google_Form_Name="Form+responses+1"
 
-	var CaptchaKey = "6LfijlkjAAAAAKM0QsHvZnaThF3yK125oZtrMXDE" // put your Google Captcha Key here
 </script> 
 <script src="assets/replace-vars.js">
 </script>
-
-
 <script>
-
-
-  </script>
-
+</script>
 <script src="assets/guest-book-WIP.js"></script>
