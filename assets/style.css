@@ -1,6 +1,7 @@
 body {
-	 background: #cddbe2;
+	 background: #1d1d1d;
 	 font-family: 'Muli', sans-serif;
+	 color: white;
 }
  .container {
 	 width: 60%;
@@ -25,7 +26,7 @@ body {
 }
  a {
 	 text-decoration: none;
-	 color: #cddbe2;
+	 color: white;
 	 background: #f38124;
 	 transition: all 0.25s ease;
 }
@@ -48,7 +49,7 @@ body {
 	 width: 30%;
 }
  .entry {
-	 background: #d3d3d3;
+	 background: #3a3a3a;
 	 padding: 0.5rem 1.5rem;
 	 transition: background 0.25s ease;
 }
@@ -105,7 +106,7 @@ body {
 	 box-sizing: border-box;
 	 width: 20%;
 	 float: left;
-	 border-left: solid 2px #cddbe2;
+	 border-left: solid 2px #1d1d1d;
 	 text-align: center;
 	 padding: 1em 0;
 	 position: relative;
@@ -157,7 +158,7 @@ body {
 	 display: inline-block;
 	 border: none;
 	 margin-right: 0.5rem;
-	 color: #cddbe2;
+	 color: #1d1d1d;
 	 background: #f38124;
 	 transition: all 0.25s ease;
 }
@@ -186,7 +187,7 @@ body {
 .popup {
 	 margin: 23px auto;
 	 padding: 20px;
-	 background: #fff;
+	 background: #3a3a3a;
 	 border-radius: 5px;
 	 width: 30%;
 	 position: relative;
@@ -194,7 +195,6 @@ body {
 }
  .popup h2 {
 	 margin-top: 0;
-	 color: #333;
 	 font-family: Tahoma, Arial, sans-serif;
 }
  .popup .close {
@@ -205,10 +205,11 @@ body {
 	 font-size: 30px;
 	 font-weight: bold;
 	 text-decoration: none;
-	 color: #333;
+	 color: black;
+	 background: #3a3a3a;
 }
  .popup .close:hover {
-	 color: #06d85f;
+	 color: white;
 }
  .popup .content {
 	 max-height: 30%;
@@ -249,7 +250,7 @@ body {
 	 color: #333;
 }
  .sign-guest-book-popup .close:hover {
-	 color: #06d85f;
+	 color: white;
 }
  .sign-guest-book-popup .content {
 	 max-height: 30%;

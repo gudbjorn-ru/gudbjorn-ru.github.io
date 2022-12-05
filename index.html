@@ -5,12 +5,12 @@
 <link href="https://fonts.googleapis.com/css?family=Muli|Ovo" rel="stylesheet">
 <link rel="stylesheet" href="assets/style.css">
 	
-<!-- I'm hoping we don't need this part <script src="https://www.google.com/recaptcha/api.js" async defer></script>	-->
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 <body>
 <div id="GuestBook">
 	<h1 class="main-header"> Litla síðan mín</h1>
-	<h3 id="t">Recent Entries</h3>
+	<h3 id="t">Nýlegar skráningar</h3>
 <!-- Homepage -->
 <div class="container">
 
@@ -23,12 +23,11 @@
 
 	
     <div class="right-block">
-        <h1>Let's test this thing</h1>
-        <p>I sure hope this works</p>
+        <h1>Veljið úr listanum að neðan</h1>
         <div class="links">
-           <a href="#AllEntries">View All Entries</a>
-            <a href="#SignGuestBook">Sign the Guestbook</a>
-	    <a onClick="window.location.reload();">Refresh Guestbook</a>	
+           <a href="#AllEntries">Sjá gögn</a>
+            <a href="#SignGuestBook">Skrá nýja komu</a>
+	    <a onClick="window.location.reload();">Uppfæra lista</a>	
            
         </div>
     </div>
@@ -53,10 +52,10 @@
         <input class="form-element" type="text" name="GOOGLE_ENTRY_ID_Email" id="GOOGLE_ENTRY_ID_Email" placeholder="Inn" style="background: #c9c9c9;">
       
    <label for="GOOGLE_ENTRY_ID_TextArea"  class="max-length">Guestbook Entry</label>
-<!--       
+
          <label for="g-recaptcha"  class="aterisk_after">Captcha</label>      
 	 <div class="g-recaptcha"
-       data-sitekey="GOOGLE_Captcha_Key"></div>    -->
+       data-sitekey="GOOGLE_Captcha_Key"></div>
       
         <input class="form-button" type="submit" value="Submit">
         <input class="form-button" type="reset" value="Reset Form">
@@ -69,7 +68,7 @@
 	
 <div id="AllEntries" class="overlay">
 	<div class="popup">
-		<h2>All Entries</h2>
+		<h2>Allar skráningar</h2>
 		<a class="close" href="#">&times;</a>
 		<div id="AllEntries_Content" class="content" style="height: 25em;overflow-y: auto;">
 	
@@ -94,15 +93,12 @@
 
   var Google_Form_Link="https://docs.google.com/forms/d/e/1FAIpQLScZyjqEu0Y4TdlB9cscgYfXry3U6gFRwV_xvaWILrwjQSQ5QA/formResponse?"  
 	  
-	var Google_Form_ID="1FAIpQLScZyjqEu0Y4TdlB9cscgYfXry3U6gFRwV_xvaWILrwjQSQ5QA"  
+	var Google_Form_ID="1yQTIObn6Nq9qFf2auTJqLADv7_3AaJ1gZplWZ82PBtQ"  
 	 
-	var Google_Form_Name="Mælingar - Krónan"  
-	
-  
-  // Google Recaptcha Key 
-	 
-	//var CaptchaKey = "6LcmzH4gAAAAAAHKvR7hX8TkMcUsTlNzPU0m-U23" // put your Google Captcha Key here
-  </script> 
+	var Google_Form_Name="Form+responses+1"
+
+	var CaptchaKey = "6LfijlkjAAAAAKM0QsHvZnaThF3yK125oZtrMXDE" // put your Google Captcha Key here
+</script> 
 <script src="assets/replace-vars.js">
 </script>
 
