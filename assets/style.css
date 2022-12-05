@@ -26,11 +26,11 @@ body {
  a {
 	 text-decoration: none;
 	 color: #cddbe2;
-	 background: #a51c3c;
+	 background: #f38124;
 	 transition: all 0.25s ease;
 }
  a:hover {
-	 background: #ed1b51;
+	 background: #da6d15;
 	 color: #fff;
 }
  h1 {
@@ -48,12 +48,12 @@ body {
 	 width: 30%;
 }
  .entry {
-	 background: #5ec6c8;
+	 background: #d3d3d3;
 	 padding: 0.5rem 1.5rem;
 	 transition: background 0.25s ease;
 }
  .entry:nth-child(even) {
-	 background: #3cbeb9;
+	 background: #c0c0c0;
 }
  .entry-info {
 	 font-style: italic;
@@ -65,7 +65,7 @@ body {
 	 margin-bottom: 0.125rem;
 }
  .entry-info .author {
-	 color: #a51c3c;
+	 color: #f38124;
 	 font-weight: bold;
 }
  .entry-text p {
@@ -143,17 +143,14 @@ body {
 	 padding: 0.5em;
 	 border: none;
 	 resize: none;
-	 background: #5ec6c8;
+	 background: #d3d3d3;
 	 color: #000;
 }
  .form-element::placeholder {
-	 color: #2ba395;
+	 color: #999999;
 }
  .form-element:focus {
-	 outline-color: #ed1b51;
-}
- .form-element.short {
-	 width: 30%;
+	 outline-color: #da6d15;
 }
  .form-button {
 	 padding: 1rem 4rem;
@@ -161,11 +158,11 @@ body {
 	 border: none;
 	 margin-right: 0.5rem;
 	 color: #cddbe2;
-	 background: #a51c3c;
+	 background: #f38124;
 	 transition: all 0.25s ease;
 }
  .form-button:hover {
-	 background: #ed1b51;
+	 background: #da6d15;
 	 color: #fff;
 }
  .overlay {
@@ -299,7 +296,7 @@ body {
 	 background: 0 0;
 }
  input:not([type="submit"]):not(:placeholder-shown) {
-	 background: #5ec6c8;
+	 background: #d3d3d3;
 }
  input:not([type="submit"]):not(:focus):not(:placeholder-shown):valid {
 	 border: 1px solid #00a34a;
@@ -311,7 +308,7 @@ body {
 	 border: 1px solid grey;
 }
  input:not([type="submit"]):focus {
-	 background: #5ec6c8;
+	 background: #d3d3d3;
 }
  form:invalid input[type="submit"] {
 	 opacity: 0.5;
