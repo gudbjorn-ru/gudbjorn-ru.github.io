@@ -55,9 +55,9 @@
          let SantizeResponses =  encodeHTML(row.Operation)
          
          let SantizeName =  encodeHTML(row.Identification)
-         
+
          // Split timestamp data
-                     var splitTime =  row.Timestamp.split(' ')[0];
+         var splitTime =  row.Timestamp.split(' ')[0];
          var splitTime_1 =  row.Timestamp.split(' ').pop();
  
          
