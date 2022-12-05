@@ -105,7 +105,7 @@
      var response = grecaptcha.getResponse();
      if (response.length === 0) {
           // if Captcha not passed - do no nothing. 
-         return false;
+         return true;
      } else {
          // if Captcha Passed - Validate Text For Swearing Etc. 
          validate_text();

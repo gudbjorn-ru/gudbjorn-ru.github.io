@@ -228,11 +228,12 @@ body {
 	 height: min-content;
 	 margin: 0px auto;
 	 padding: 20px;
-	 background: #fff;
 	 border-radius: 5px;
 	 width: fit-content;
 	 position: relative;
 	 transition: all 5s ease-in-out;
+	 color: black;
+	 background: #3a3a3a;
 }
  .sign-guest-book-popup h2 {
 	 margin-top: 0;
